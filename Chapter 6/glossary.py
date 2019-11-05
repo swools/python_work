@@ -8,7 +8,3 @@ glossary = {
 
 for word in glossary:
     print(f"{word.title()}:\n\t{glossary[word].capitalize()}.\n")
-
-print(f"{glossary.keys()}\n")
-print(f"{glossary.values()}\n")
-print(f"{glossary.items()}\n")
