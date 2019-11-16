@@ -7,6 +7,7 @@ class User:
         self.age = age
         self.location = location.title()
         self.full_name = f"{self.first_name} {self.last_name}"
+        self.login_attempts = 0
 
     def describe_user(self):
         print(
@@ -14,6 +15,12 @@ class User:
 
     def greet_user(self):
         print(f"Welcome, {self.full_name}")
+
+    def increment_login_attempts(self):
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        self.login_attempts = 0
 
 
 new_user = User('steve', 'wool', 28, 'new jersey')
@@ -24,3 +31,13 @@ new_user.greet_user()
 
 another_user.describe_user()
 another_user.greet_user()
+
+new_user.increment_login_attempts()
+new_user.increment_login_attempts()
+new_user.increment_login_attempts()
+new_user.increment_login_attempts()
+new_user.increment_login_attempts()
+new_user.increment_login_attempts()
+print(new_user.login_attempts)
+new_user.reset_login_attempts()
+print(new_user.login_attempts)
