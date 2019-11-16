@@ -7,7 +7,3 @@ def build_profile(first, last, location, age, nickname):
     user_info['age'] = age
     user_info['nickname'] = last
     return user_info
-
-user_profile = build_profile('steve', 'wool', location="New Jersey", age=28, nickname='swool')
-
-print(user_profile)
