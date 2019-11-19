@@ -21,23 +21,3 @@ class User:
 
     def reset_login_attempts(self):
         self.login_attempts = 0
-
-
-new_user = User('steve', 'wool', 28, 'new jersey')
-another_user = User('brittany', 'wool', 29, 'new jersey')
-
-new_user.describe_user()
-new_user.greet_user()
-
-another_user.describe_user()
-another_user.greet_user()
-
-new_user.increment_login_attempts()
-new_user.increment_login_attempts()
-new_user.increment_login_attempts()
-new_user.increment_login_attempts()
-new_user.increment_login_attempts()
-new_user.increment_login_attempts()
-print(new_user.login_attempts)
-new_user.reset_login_attempts()
-print(new_user.login_attempts)

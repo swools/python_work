@@ -23,27 +23,22 @@ class Restaurant:
         self.numbered_served += inc
 
 
-my_restaurant = Restaurant('il portos', 'italian')
+class IceCreamStand(Restaurant):
+    """Represent available ice cream flavors"""
 
-print(my_restaurant.numbered_served)
-my_restaurant.numbered_served = 5
-print(my_restaurant.numbered_served)
+    def __init__(self, restaurant_name, cuisine_type):
+        """Initialize attributes of the parent class"""
+        super().__init__(restaurant_name, cuisine_type)
 
-my_restaurant.set_number_served(10)
-print(my_restaurant.numbered_served)
+        self.flavors = ['Coffee', 'Mint Chocolate Chip', 'Chocolate', 'Vanilla', 'Black Raspberry']
 
-my_restaurant.increment_number_served(10)
-print(my_restaurant.numbered_served)
+    def print_flavors(self):
+        for flavor in self.flavors:
+            print(f"\n{flavor}")
 
 
-# your_restaurant = Restaurant('don jose\'s', 'mexican')
-# third_restaurant = Restaurant('krave', 'american')
-# print(my_restaurant.name.title())
-# print(my_restaurant.type.title())
+ice_cream = IceCreamStand('Scoops', 'Ice Cream')
+ice_cream.print_flavors()
 
-# my_restaurant.describe_restaurant()
-# my_restaurant.open_restaurant()
-
-# my_restaurant.describe_restaurant()
-# your_restaurant.describe_restaurant()
-# third_restaurant.describe_restaurant()
+print(ice_cream.name)
+print(ice_cream.type)

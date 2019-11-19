@@ -1,0 +1,3 @@
+In Python you can use classes to represent real life things
+In Python you can store key value pairs in a dictionary
+In Python you can check to see if your birthday shows up in pi
