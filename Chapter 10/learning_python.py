@@ -1,4 +1,4 @@
-filename = 'learning_python.txt'
+filename = 'Chapter 10/learning_python.txt'
 
 with open(filename) as file_object:
     contents_list = file_object.readlines()
